@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-transform: none;
+}
+
+body {
+  max-width: 488px;
+  min-width: 320px;
+  margin: 0 auto;
+  background: #000;
+
+  header {
+    width: 100%;
+    height: 7.92rem;
+    background: url(../img/unnamed@2x.png);
+    background-size: 100% 100%;
+    font-size: 10px;
+    padding-top: 0.14rem;
+    //顶部时间电量
+    .top {
+      width: 100%;
+      height: 0.12rem;
+      padding: 0 0.22rem;
+
+      img {
+        width: 100%;
+        height: 0.12rem;
+        vertical-align: center;
+      }
+    }
+
+    .logos {
+      width: 100%;
+      height: 0.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.64rem;
+      padding: 0 0.35rem 0 0.24rem;
+
+      img {
+        &:nth-of-type(1) {
+          width: 0.24rem;
+          height: 0.25rem;
+        }
+
+        &:nth-of-type(2) {
+          width: 0.22rem;
+          height: 0.05rem;
+        }
+      }
+    }
+
+    //文字
+    .context {
+      height: 0.6rem;
+      padding-left: 0.38rem;
+      padding-right: 0.19rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 3.39rem;
+
+      .left {
+        font-family: Montserrat-Regular;
+        position: relative;
+
+        h1 {
+          color: #fff;
+          font-size: 0.5234000000000001rem;
+          margin-bottom: -0.16rem;
+        }
+
+        h2 {
+          color: rgba(22, 125, 200, 0.7);
+          font-size: 0.34490000000000004rem;
+          margin-left: 0.1rem;
+        }
+
+        .radius {
+          border-radius: 50%;
+          background: #fff;
+          width: 0.16rem;
+          height: 0.16rem;
+          position: absolute;
+          left: 1.78rem;
+          top: 0.71rem;
+        }
+      }
+
+      .right {
+        width: 0.26rem;
+        height: 0.19rem;
+        background: url("../img/noun_play all_1892794@2x.png");
+        background-size: 100% 100%;
+      }
+
+
+    }
+
+    //搜索
+    .search {
+      margin-top: 0.33rem;
+      padding: 0 0.33rem 0 0.26rem;
+      height: 0.5rem;
+
+      input {
+        background: url("../img/Search@2x.png") #000 no-repeat 0.15rem 0.16rem;
+        background-size: 0.21rem 0.2rem;
+        border: 0;
+        outline: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 0.205rem;
+        padding-left: 0.46rem;
+        color: rgba(142, 142, 142, 1);
+      }
+    }
+  }
+
+  //音乐列表
+  .music {
+    padding-left: 0.36rem;
+    padding-right: 0.57rem;
+    height: 3.99rem;
+    font-size: 10px;
+    margin-top: -1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .music-list {
+      height: 0.52rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+          color: rgba(188, 178, 178, 1);
+          font-size: 0.1588rem;
+          letter-spacing: -0.01rem;
+          font-family: Montserrat-Regular;
+        }
+
+        .center {
+          width: 2.53rem;
+          display: flex;
+          justify-content: space-between;
+  img{
+    border-radius: 0.09rem;
+    width: 0.54rem;
+    height: 0.52rem;
+  }
+          .text {
+            width: 1.95rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0.17rem;
+          width: 1.95rem;
+            p {
+              &:nth-of-type(1) {
+                color: #fff;
+                font-size: 0.1404rem;
+                display: flex;
+                align-items: center;
+
+                b {
+                  background: rgba(30, 144, 184, 1);
+                  border-radius: 0.09rem;
+                  font-size: 0.0458rem !important;
+                  display: block;
+                  text-align: center;
+                }
+              }
+
+              &:nth-of-type(2) {
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 0.14rem;
+                font-family: Montserrat-Light;
+              }
+            }
+          }
+        }
+
+        width: 3rem;
+      }
+
+      & > span {
+
+        background: url("../img/Dots @2x.png");
+        display: block;
+        width: 0.18rem;
+        height: 0.048rem;
+        background-size: 100% 100%;
+
+      }
+    }
+  }
+}
